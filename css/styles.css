@@ -1,0 +1,100 @@
+:root {
+    /* background color site */
+    --light-background-color: #ffffff;
+    --medium-background-color: #4a4f56;
+    --dark-background-color: #3b3f45;
+    --dark-gray-background-color: #625e77;
+    --medium-gray-background-color: #7a7593;
+    --light-gray-background-color: #88839e;
+
+    /* text color site */
+    --light-text-color: #ffffff;
+    --dark-text-color: #9b96ac;
+    --accent-text-color: #ff8984;
+
+    /* star color site */
+    --icon-color: #000000;
+}
+
+/* font family */
+.open-sans-regular {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.open-sans-bold {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* base styles */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--light-text-color);
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.8) 20%,
+            rgba(0, 0, 0, 0.5) 50%,
+            rgba(0, 0, 0, 0.8) 80%
+        ),
+        url("../images/background.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: "Open Sans", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+address {
+    font-style: normal;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+button {
+    padding: 0;
+    cursor: pointer;
+}
