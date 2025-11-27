@@ -146,6 +146,8 @@ button {
     width: 100%;
     color: var(--light-text-color);
     cursor: pointer;
+    transition: background-color 0.1s ease-in, color 0.1s ease-in,
+        border 0.1s ease-in;
 }
 .list-item:nth-child(odd) {
     background-color: var(--light-gray-background-color);
@@ -159,6 +161,7 @@ button {
     margin: 0;
     opacity: 0;
     cursor: pointer;
+    transition: opacity 0.1s ease-in;
 }
 .list-item p::before {
     position: absolute;
@@ -172,6 +175,7 @@ button {
     flex-shrink: 0;
     transition: 0.2s;
     background-color: var(--light-background-color);
+    transition: background-color 0.1s ease-in, transform 0.1s ease-in;
 }
 
 .list-item:hover {
@@ -203,7 +207,7 @@ button {
     width: 10px;
     height: 10px;
     opacity: 0;
-    transition: 0.2s;
+    transition: opacity 0.1s ease-in;
 }
 .list-item:has(input[type="checkbox"]:checked) .list-item-icon {
     opacity: 1;
@@ -229,6 +233,8 @@ button {
     background-color: var(--medium-background-color);
     color: var(--accent-text-color);
     border: none;
+    transition: background-color 0.1s ease-in, border 0.1s ease-in,
+        box-shadow 0.1s ease-in;
 }
 .button:hover {
     background-color: var(--dark-gray-background-color);
