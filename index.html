@@ -14,43 +14,60 @@
         <title>Dinner Shopping List</title>
     </head>
     <body>
-        <header>
-            <h1>CSS Dinner Shopping List</h1>
-            <p>Let’s go to the mall!</p>
-        </header>
-        <main>
-            <ul>
-                <li>
+        <main class="container">
+            <header class="header">
+                <h1 class="title roboto-bold">CSS Dinner Shopping List</h1>
+                <p class="subtitle roboto-regular">Let’s go to the mall!</p>
+            </header>
+            <ul class="list roboto-regular">
+                <li class="list-item">
                     <input type="checkbox" />
-                    <p>A lot of pickles</p>
-                    <span> (for the next lessons about CSS)</span>
+                    <img
+                        class="list-item-icon"
+                        src="./images/icon.svg"
+                        alt="Mark"
+                    />
+                    <div class="list-item-text">
+                        <p>A lot of pickles</p>
+                        <span> (for the next lessons about CSS)</span>
+                    </div>
                 </li>
-                <li>
+                <li class="list-item">
                     <input type="checkbox" />
-                    <p>10 apples</p>
-                    <span> (for more CSS manipulations)</span>
+                    <div class="list-item-text">
+                        <p>10 apples</p>
+                        <span> (for more CSS manipulations)</span>
+                    </div>
                 </li>
-                <li>
+                <li class="list-item">
                     <input type="checkbox" />
-                    <p>20 oranges</p>
-                    <span> (because they are awesome)</span>
+                    <div class="list-item-text">
+                        <p>20 oranges</p>
+                        <span> (because they are awesome)</span>
+                    </div>
                 </li>
-                <li>
+                <li class="list-item">
                     <input type="checkbox" />
-                    <p>13 plates</p>
-                    <span> (hm... they always dissapear)</span>
+                    <div class="list-item-text">
+                        <p>13 plates</p>
+                        <span> (hm... they always dissapear)</span>
+                    </div>
                 </li>
-                <li>
+                <li class="list-item">
                     <input type="checkbox" />
-                    <p>15 bentos</p>
+                    <div class="list-item-text">
+                        <p>15 bentos</p>
+                    </div>
                 </li>
-                <li>
+                <li class="list-item">
                     <input type="checkbox" />
-                    <p>1 bottle of Sake</p>
-                    <span> (for my friends)</span>
+                    <div class="list-item-text">
+                        <p>1 bottle of Sake</p>
+                        <span> (for my friends)</span>
+                    </div>
                 </li>
             </ul>
-            <button>Bon appetit :)</button>
+            <button class="button roboto-regular">Bon appetit :)</button>
         </main>
     </body>
 </html>
