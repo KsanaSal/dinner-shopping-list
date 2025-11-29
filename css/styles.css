@@ -143,6 +143,8 @@ button {
     align-items: center;
     background-color: var(--light-gray-background-color);
     padding: 12px 14px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
     width: 100%;
     color: var(--light-text-color);
     cursor: pointer;
